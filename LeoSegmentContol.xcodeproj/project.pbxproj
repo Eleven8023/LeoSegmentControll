@@ -15,6 +15,8 @@
 		A3FA39391CF6C4E500B4B277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FA39371CF6C4E500B4B277 /* LaunchScreen.storyboard */; };
 		A3FA39441CF6C4E500B4B277 /* LeoSegmentContolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FA39431CF6C4E500B4B277 /* LeoSegmentContolTests.m */; };
 		A3FA394F1CF6C4E500B4B277 /* LeoSegmentContolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FA394E1CF6C4E500B4B277 /* LeoSegmentContolUITests.m */; };
+		A3FA395F1CF6C5A400B4B277 /* LeoSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FA395E1CF6C5A400B4B277 /* LeoSegmentControl.m */; };
+		A3FA39611CF6CC5A00B4B277 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FA39601CF6CC5A00B4B277 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		A3FA394A1CF6C4E500B4B277 /* LeoSegmentContolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeoSegmentContolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FA394E1CF6C4E500B4B277 /* LeoSegmentContolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeoSegmentContolUITests.m; sourceTree = "<group>"; };
 		A3FA39501CF6C4E500B4B277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3FA395D1CF6C5A400B4B277 /* LeoSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeoSegmentControl.h; sourceTree = "<group>"; };
+		A3FA395E1CF6C5A400B4B277 /* LeoSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeoSegmentControl.m; sourceTree = "<group>"; };
+		A3FA39601CF6CC5A00B4B277 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FA39611CF6CC5A00B4B277 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,8 @@
 		A3FA391D1CF6C4E500B4B277 = {
 			isa = PBXGroup;
 			children = (
+				A3FA39601CF6CC5A00B4B277 /* QuartzCore.framework */,
+				A3FA395C1CF6C51700B4B277 /* LeoSegmentControl */,
 				A3FA39281CF6C4E500B4B277 /* LeoSegmentContol */,
 				A3FA39421CF6C4E500B4B277 /* LeoSegmentContolTests */,
 				A3FA394D1CF6C4E500B4B277 /* LeoSegmentContolUITests */,
@@ -138,6 +146,16 @@
 				A3FA39501CF6C4E500B4B277 /* Info.plist */,
 			);
 			path = LeoSegmentContolUITests;
+			sourceTree = "<group>";
+		};
+		A3FA395C1CF6C51700B4B277 /* LeoSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				A3FA395D1CF6C5A400B4B277 /* LeoSegmentControl.h */,
+				A3FA395E1CF6C5A400B4B277 /* LeoSegmentControl.m */,
+			);
+			name = LeoSegmentControl;
+			path = LeoSegmentContol/LeoSegmentControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +290,7 @@
 			files = (
 				A3FA39311CF6C4E500B4B277 /* ViewController.m in Sources */,
 				A3FA392E1CF6C4E500B4B277 /* AppDelegate.m in Sources */,
+				A3FA395F1CF6C5A400B4B277 /* LeoSegmentControl.m in Sources */,
 				A3FA392B1CF6C4E500B4B277 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
